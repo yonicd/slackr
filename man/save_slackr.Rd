@@ -30,8 +30,8 @@ to Slack and (optionally) post them to one or more channels
 }
 \note{
 You can pass in \code{add_user=TRUE} as part of the \code{...} parameters and the Slack API
-      will post the message as your logged-in user account (this will override anything set in
-      \code{username})
+will post the message as your logged-in user account (this will override anything set in
+\code{username})
 }
 \examples{
 \dontrun{

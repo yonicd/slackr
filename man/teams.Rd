@@ -7,8 +7,100 @@
 \description{
 Manage multilple Slack teams
 }
-\details{
-If a json file exists, it will be read on initialization and
-add teams listed in the file.
+\section{Initialization}{
+
+A new 'Teams'-object is initialized using the \code{new()} method on the generator:
+
+\tabular{l}{
+\code{x <- teams$new(file = '~/slackr.json')}
+}
+
+If a json file exists in the default path, it will be read on initialization
+and apply the add method to the teams listed in the file.
+}
+
+\section{Public Fields}{
+
+
+\tabular{lll}{
+Field \tab  Class \tab Description \cr
+\strong{file} \tab  character \tab path the json containing slackr-app key and memberid\cr
+\strong{icon_emoji} \tab  character \tab Icon Emoji to use when posting to Slack \cr
+\strong{username} \tab  character \tab Username to use when posting to Slack
+}
+}
+
+\section{Public Methods}{
+
+
+\foldstart{Setup}
+
+\tabular{ll}{
+Method \tab Description \cr
+\strong{use}(\emph{team}) \tab Query \href{https://github.com/yonicd/slackr-app}{slackr-app} with team name to set environment variables for slackr.\cr
+\strong{manual_setup}(\emph{file}) \tab Use a dcf file to set up environment variables via \link[slackr:slackr_setup]{slackr_setup}
+}
+
+\foldend
+
+\foldstart{Information}
+
+\tabular{ll}{
+Method \tab Description \cr
+\strong{names}() \tab Return the names of the stored team in the object \cr
+\strong{get}(\emph{team}) \tab Return slackr-app key and memberid for a team or teams \cr
+\strong{current_env}() \tab Return the current values of the environment variables defined by slackr
+}
+
+\foldend{}
+
+\foldstart{Manipulation}
+
+\tabular{ll}{
+Method \tab Description \cr
+\strong{add}(\emph{team_name}, \emph{memberid}, \emph{key}) \tab Manually add to the object slack-app key and memberid \cr
+\strong{rm}(\emph{team}) \tab Remove a team stored in the object \cr
+\strong{update_file}(\emph{file}) \tab Update the on disk json file with information of the stored teams \cr
+\strong{upload_file}(\emph{file}) \tab Upload a json file from disk containing slackr-app key and memberid by team
+}
+
+\foldend{}
+}
+
+\examples{
+\dontrun{
+
+# initialize
+x <- teams$new()
+
+x
+
+if(length(x$names())>1){
+
+team_name <- x$names()[1]
+
+# query slackr-app key and memberid for team
+x$get(team_name)
+
+# query slackr-app API to setup environment variables
+x$use(team_name)
+
+# use slackr
+slackr::slackr('Test')
+
+}
+
+# Use dcf file for setup
+if(file.exists('~/.slackr')){
+
+x$manual_setup('~/.slackr')
+
+# use slackr
+slackr::slackr('Test')
+
+}
+
+}
+
 }
 \keyword{datasets}

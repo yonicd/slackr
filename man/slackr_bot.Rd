@@ -42,15 +42,15 @@ channel, username, icon etc, but these can be overridden.
 }
 \note{
 You need a \url{https://www.slack.com} account and will also need to
-  setup an incoming webhook: \url{https://api.slack.com/}. Old style webhooks are
-  no longer supported.
+setup an incoming webhook: \url{https://api.slack.com/}. Old style webhooks are
+no longer supported.
 }
 \section{Webhook URLs}{
  Webhook URLs look like: \itemize{
 
-  \item \code{https://hooks.slack.com/services/XXXXX/XXXXX/XXXXX}
+\item \code{https://hooks.slack.com/services/XXXXX/XXXXX/XXXXX}
 
-  }
+}
 
 OLD STYLE WEBHOOKS ARE NO LONGER SUPPORTED
 }
@@ -67,6 +67,6 @@ slackr_bot("Test message", username="slackr", channel="#random",
 }
 \seealso{
 \code{\link{slackrSetup}}, \code{\link{slackr}},
-  \code{\link{dev_slackr}}, \code{\link{save_slackr}},
-  \code{\link{slackr_upload}}
+\code{\link{dev_slackr}}, \code{\link{save_slackr}},
+\code{\link{slackr_upload}}
 }

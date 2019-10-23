@@ -37,5 +37,5 @@ history_slackr(count=1)
 \url{https://api.slack.com/methods/channels.history}
 }
 \author{
-Jonathan Sidi [aut]
+Jonathan Sidi \link{aut}
 }

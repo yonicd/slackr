@@ -32,7 +32,7 @@ delete_slackr(count=1)
 \url{https://api.slack.com/methods/chat.delete}
 }
 \author{
-Quinn Weber [aut], Bob Rudis [ctb]
+Quinn Weber \link{aut}, Bob Rudis \link{ctb}
 
-Jonathan Sidi [aut]
+Jonathan Sidi \link{aut}
 }

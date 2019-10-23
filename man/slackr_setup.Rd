@@ -50,7 +50,7 @@ values there will be used. The fields should be specified as such in the file:
 }
 \note{
 You need a \href{slack.com}{Slack} account and all your API URLs & tokens setup
-      to use this package.
+to use this package.
 }
 \examples{
 \dontrun{
@@ -67,5 +67,5 @@ slackr_setup(channel="#code",
 }
 \seealso{
 \code{\link{slackr}}, \code{\link{dev_slackr}}, \code{\link{save_slackr}},
-         \code{\link{slackr_upload}}
+\code{\link{slackr_upload}}
 }

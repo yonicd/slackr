@@ -27,8 +27,8 @@
 #' tex_slackr(obj,path='testdir',print.xtable.opts=list(scalebox=getOption("xtable.scalebox", 0.8)))
 #' }
 #' @seealso
-#'  \code{\link[texPreview]{texPreview}} \code{\link[xtable]{print.xtable}}
-#' @importFrom texPreview texPreview
+#'  \code{\link[texPreview]{tex_preview}} \code{\link[xtable]{print.xtable}}
+#' @importFrom texPreview tex_preview
 #' @author Jonathan Sidi [aut]
 #' @export
 tex_slackr <- function(obj,
@@ -50,7 +50,7 @@ tex_slackr <- function(obj,
 
   if(!dir.exists(td)) dir.create(td)
 
-  texPreview::texPreview(
+  texPreview::tex_preview(
     obj = obj,
     stem = 'slack',
     fileDir = td,

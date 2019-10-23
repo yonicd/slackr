@@ -38,5 +38,5 @@ slackrUpload(filename, title = basename(filename),
 \code{\link{slackr_setup}}, \code{\link{dev_slackr}}, \code{\link{save_slackr}}
 }
 \author{
-Quinn Weber [ctb], Bob Rudis [aut]
+Quinn Weber \link{ctb}, Bob Rudis \link{aut}
 }

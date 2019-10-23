@@ -30,9 +30,9 @@ eliminating the need write to pdf and convert to png to pass to slack.
 }
 \note{
 You need to setup a full API token (i.e. not a webhook & not OAuth) for this to work
-      Also, uou can pass in \code{add_user=TRUE} as part of the \code{...}
-      parameters and the Slack API will post the message as your logged-in user
-      account (this will override anything set in \code{username})
+Also, uou can pass in \code{add_user=TRUE} as part of the \code{...}
+parameters and the Slack API will post the message as your logged-in user
+account (this will override anything set in \code{username})
 }
 \examples{
 \dontrun{
@@ -48,8 +48,8 @@ tex_slackr(obj,path='testdir',print.xtable.opts=list(scalebox=getOption("xtable.
 }
 }
 \seealso{
-\code{\link[texPreview]{texPreview}} \code{\link[xtable]{print.xtable}}
+\code{\link[texPreview]{tex_preview}} \code{\link[xtable]{print.xtable}}
 }
 \author{
-Jonathan Sidi [aut]
+Jonathan Sidi \link{aut}
 }

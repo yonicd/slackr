@@ -82,5 +82,5 @@ delete_slackr(count = 6,channel = '#general')
 \code{\link{text_slackr}}
 }
 \author{
-Jonathan Sidi [aut]
+Jonathan Sidi \link{aut}
 }

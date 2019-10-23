@@ -43,8 +43,8 @@ Information on this method can be found here: \url{https://api.slack.com/methods
 }
 \note{
 You can pass in \code{add_user=TRUE} as part of the \code{...} parameters and the Slack API
-      will post the message as your logged-in user account (this will override anything set in
-      \code{username})
+will post the message as your logged-in user account (this will override anything set in
+\code{username})
 }
 \examples{
 \dontrun{
@@ -62,5 +62,5 @@ edit_slackr('goodbye new world',pattern='world',idx=2)
 \url{https://api.slack.com/methods/chat.update}
 }
 \author{
-Jonathan Sidi [aut]
+Jonathan Sidi \link{aut}
 }

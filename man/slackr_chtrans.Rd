@@ -19,7 +19,7 @@ slackrChTrans(channels, api_token = Sys.getenv("SLACK_API_TOKEN"))
 }
 \value{
 character vector - original channel list with \code{#} or
-         \code{@} channels replaced with ID's.
+\code{@} channels replaced with ID's.
 }
 \description{
 Given a vector of one or more channel names, it will retrieve list of
@@ -27,5 +27,5 @@ active channels and try to replace channels that begin with "\code{#}" or "\code
 with the channel ID for that channel. Also incorporates groups.
 }
 \author{
-Quinn Weber [ctb], Bob Rudis [aut]
+Quinn Weber \link{ctb}, Bob Rudis \link{aut}
 }
