@@ -102,11 +102,12 @@ scope
 
 <details open>
 
-<summary> <span title="Click to Expand"> teams </span> </summary>
+<summary> <span title="Click to Expand"> `teams` </span> </summary>
 
-`slackr::teams` is an `R6` object that manages multiple Slack teams. The
-object queries the [slackr-app](https://github.com/yonicd/slackr-app)
-database to set the environment variables needed by slackr,
+`slackr::teams` is an `R6` object that allows the user to manage
+multiple Slack teams during a session. The object queries the
+[slackr-app](https://github.com/yonicd/slackr-app) database to set the
+environment variables needed by slackr.
 
 </details>
 
@@ -114,7 +115,7 @@ database to set the environment variables needed by slackr,
 
 <details closed>
 
-<summary> <span title="Click to Expand"> slackr\_setup </span>
+<summary> <span title="Click to Expand"> `slackr_setup` </span>
 </summary>
 
 The `slackr_setup()` function will try to read setup values from a
@@ -183,7 +184,7 @@ library(slackr)
 library(testthat)
 
 date()
-#> [1] "Tue Oct 22 21:32:03 2019"
+#> [1] "Tue Oct 22 21:38:17 2019"
 
 test_dir("tests/")
 #> ✔ |  OK F W S | Context
@@ -197,6 +198,8 @@ test_dir("tests/")
 #> Failed:   0
 #> Warnings: 0
 #> Skipped:  0
+#> 
+#> You rock!
 ```
 
 ### Onexit Usage

@@ -84,7 +84,7 @@ The following button will create the webhook with the correct scope
 ### SETUP
 
 ```{r,echo = FALSE}
-details::details("`slackr::teams` is an `R6` object that manages multiple Slack teams. The object queries the [slackr-app](https://github.com/yonicd/slackr-app) database to set the environment variables needed by slackr, ",summary = 'teams',lang = NULL,open = TRUE)
+details::details("`slackr::teams` is an `R6` object that allows the user to manage multiple Slack teams during a session. The object queries the [slackr-app](https://github.com/yonicd/slackr-app) database to set the environment variables needed by slackr. ",summary = '`teams`',lang = NULL,open = TRUE)
 ```
 
 ```{r,echo = FALSE}
@@ -97,7 +97,7 @@ Here's the basic format for the configuration file:
     username: slackr
     incoming_webhook_url: https://hooks.slack.com/services/XXXXX/XXXXX/XXXXX
 
-You can also change the default emoji icon (from the one you setup at integration creation time) with `icon_emoji`.",summary = 'slackr_setup',lang = NULL)
+You can also change the default emoji icon (from the one you setup at integration creation time) with `icon_emoji`.",summary = '`slackr_setup`',lang = NULL)
 ```
 
 
